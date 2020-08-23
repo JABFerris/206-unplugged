@@ -99,8 +99,10 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
+  font-size: 2em;
+  line-height: 1em;
   text-align: left;
+  font-weight: 500;
 }
 ul,
 ol {
@@ -108,8 +110,9 @@ ol {
 }
 h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.25em;
-  line-height: 2.25em;
+  font-size: 2em;
+  line-height: 2em;
+  color: white;
 }
 h2 {
   font-family: 'Poppins', sans-serif;
@@ -183,13 +186,6 @@ header nav ul {
 
 
 
-/* not in answers
-h2, h3 {
-  margin-top: 55px;
-}
-*/
-
-
 
  footer {
    flex-direction: column;
@@ -251,9 +247,45 @@ header .content-wrapper p,
 footer p {
   margin: 0;
 }
+/* form */
+aside .form {
+  margin-top: 30px;
+}
+input[type=text]{
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
+/*styling*/
 
+aside .content-wrapper {
+  background-color: #527158;
+}
+.hero-area {
+  background-image: url(../img/hero-background-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% cover;
+  background-color: #333;
+  
 
+}
 
  /* -------------------- Mobile Styles - Homepage -------------------- */
 
@@ -444,9 +476,9 @@ aside {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   Media Queries for Responsive Design.
+   These  override the primary ('mobile first') styles.
+ 
    ========================================================================== */
 
 @media only screen and (min-width: 768px){
